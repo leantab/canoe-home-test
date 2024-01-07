@@ -18,8 +18,8 @@ return new class extends Migration
         });
 
         Schema::create('company_fund', function (Blueprint $table) {
-            $table->foreignId('fund_id')->constrained();
-            $table->foreignId('company_id')->constrained();
+            $table->foreignId('fund_id')->constrained()->onDelete('cascade');
+            $table->foreignId('company_id')->constrained()->onDelete('cascade');
             $table->primary(['fund_id', 'company_id']);
         });
     }

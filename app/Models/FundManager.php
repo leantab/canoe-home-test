@@ -10,8 +10,14 @@ class FundManager extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'name',
+        'created_at',
+        'updated_at',
+    ];
+
     public function funds(): HasMany
     {
-        return $this->hasMany(Fund::class);
+        return $this->hasMany(Fund::class, 'fund_manager_id');
     }
 }

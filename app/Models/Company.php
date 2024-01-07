@@ -10,6 +10,12 @@ class Company extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'name',
+        'created_at',
+        'updated_at',
+    ];
+
     public function funds(): BelongsToMany
     {
         return $this->belongsToMany(Fund::class);

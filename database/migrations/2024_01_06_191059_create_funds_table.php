@@ -14,6 +14,7 @@ return new class extends Migration
             $table->foreignId('fund_manager_id')->constrained();
             $table->year('start_year');
             $table->string('alias');
+            $table->boolean('is_duplicated')->default(false);
             $table->timestamps();
         });
     }
