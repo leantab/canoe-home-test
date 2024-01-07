@@ -3,16 +3,16 @@ A simple Laravel app for Canoe hiring process
 
 
 ## Run the program
-Clone the repo
-run composer install & npm run dev (then exit)
-provide a database conection in the .env
-run migrations: 
+<p>Clone the repo. </p>
+<p>Run composer install & npm run dev (then exit) </p>
+<p>Provide a database conection in the .env </p>
+Run migrations: 
 
 ```bash
-"php artisan migrate"
+php artisan migrate
 ```
 
-run test seeder:
+Run test seeder:
 ```bash
 php artisan db:seed --class=TestSeeder"
 ```
@@ -22,7 +22,7 @@ run app with
 php artisan serve
 ```
 
-You can create a new user or use the existing "test@expample.com" with password "password".
+<p>You can create a new user or use the existing "test@expample.com" with password "password".</p>
 
 create funds with duplications and verity the assesment
 ```bash
