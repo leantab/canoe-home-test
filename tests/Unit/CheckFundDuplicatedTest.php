@@ -2,9 +2,10 @@
 
 use App\Models\Fund;
 use App\Repositories\FundsRepository;
-use PHPUnit\Framework\TestCase;
+// use PHPUnit\Framework\TestCase;
+use Tests\TestCase as TestCase;
 
-class FundsRepositoryTest extends TestCase
+class CheckFundDuplicatedTest extends TestCase
 {
     public function test_checkIfFundIsDuplicated_returns_true_when_fund_is_duplicated(): void
     {
